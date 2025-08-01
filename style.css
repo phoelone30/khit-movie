@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -113,6 +113,7 @@ section{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: rgb(2, 3, 7,0.5);
 }
 .container img{
@@ -136,7 +137,7 @@ section{
 }
 .home-text{
     z-index: 1000;
-    padding: 0 150px;
+    padding: 0 30px;
 }
 .home-text span{
     color: var(--bg-color);
@@ -313,7 +314,7 @@ section{
         padding: 50px 4%;
     }
     .home-text{
-        padding: 0 4%;
+        padding: 0 20%;
     }
     .home-text h1{
         font-size: 3rem;
@@ -380,6 +381,7 @@ section{
     .container{
         width: 100%;
         min-height: 500px;
+        justify-content: center;
     }
     header{
         padding: 6px 4%;
