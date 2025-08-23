@@ -108,14 +108,13 @@ header ul li a.active {
   transform: translateY(-5px) scale(1.03);
 }
 
-/* Coming Soon Container */
 /* Coming Soon section fix */
 .coming .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* content အပေါ်မှာ စည်း */
   align-items: center;
-  height: auto !important;  /* Swiper default height override */
+  height: auto;  /* Swiper default height override */
 }
 
 .coming .box {
