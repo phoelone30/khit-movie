@@ -118,7 +118,7 @@ header ul li a.active {
     margin-top: 2rem;
 }
 .coming-container .box img:hover{
-    transform: translateY(0);
+    transform: translateY(-5px) scale(1.03);
 }
 .coming-container .box img{
     border-radius: 8px;
