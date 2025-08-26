@@ -57,7 +57,7 @@ header ul li a.active {
   height: 90vh;
 }
 .home img {
-  width: 450px;
+  width: 100%;
   height: 85%;
   object-fit: cover;
 }
@@ -175,7 +175,7 @@ header ul li a.active {
     flex-direction: column;
     background: #111;
     position: absolute;
-    top: 70px; right: 0;
+    top: 60px; right: 0;
     width: 150px;
     padding: 15px;
   }
@@ -188,4 +188,9 @@ header ul li a.active {
   .home-text h1 {
     font-size: 1.5rem;
   }
+  .home img {
+    width: 500px;
+    height: 80%;
+    object-fit: cover;
+  }  
 }
