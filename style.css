@@ -169,14 +169,14 @@ header ul li a.active {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header ul {
     display: none;
     flex-direction: column;
     background: #111;
     position: absolute;
     top: 70px; right: 0;
-    width: 200px;
+    width: 150px;
     padding: 15px;
   }
   header ul.show {
@@ -190,8 +190,8 @@ header ul li a.active {
   }
 }
 
-  /* Styles (e.g., desktops) */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 769px) {
+  /* Styles for screens wider than 768px (e.g., desktops) */
   .container {
     display: flex;
     justify-content: space-between;
