@@ -171,7 +171,7 @@ header ul li a.active {
 /* Responsive */
 @media (max-width: 600px) {
   header ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     background: #111;
     position: absolute;
@@ -188,10 +188,16 @@ header ul li a.active {
   .home-text h1 {
     font-size: 1.5rem;
   }
+  
+  .header-photo {
+  width: 100%;
+  height: 100px;   /* example */
+  object-fit: cover;
+}
 }
 
+  /* Styles (e.g., desktops) */
 @media screen and (min-width: 500px) {
-  /* Styles for screens wider than 768px (e.g., desktops) */
   .container {
     display: flex;
     justify-content: space-between;
