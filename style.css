@@ -189,11 +189,3 @@ header ul li a.active {
     font-size: 1.5rem;
   }
 }
-
-@media screen and (min-width: 769px) {
-  /* Styles for screens wider than 768px (e.g., desktops) */
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
