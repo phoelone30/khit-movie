@@ -1,12 +1,14 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2 px ;
+  padding:  0 px   ;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* --- HomeView Featured Card --- */
 body {
-  background: #0f0f0f;
+  background: #84857b;
   color: #fff;
   line-height: 1.6;
 }
@@ -20,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  background: rgba(0,0,0,0.85);
+  background: rgb(114, 223, 238);
   backdrop-filter: blur(6px);
   z-index: 1000;
 }
@@ -52,22 +54,22 @@ header ul li a.active {
 
 /* Hero Section */
 .home {
-  margin-top: 70px;
-  width: 100%;
-  height: 90vh;
+  margin-top: 75px;
+  width:auto;
+  height: 100vh;
 }
 .home img {
   width: 100%;
-  height: 250px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat ;
+  height:100%;
+  object-fit: cover;
+  border-radius:1.5rem;
+  position: relative;
 }
 .home-text {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 5%;
-  max-width: 600px;
+  max-width: 500px;
 }
 .home-text h1 {
   font-size: 2.5rem;
@@ -92,18 +94,18 @@ header ul li a.active {
 .movies-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  padding: 40px 5%;
+  gap: 10px;
+  padding: 30px 5%;
 }
 .box {
   background: #1a1a1a;
-  border-radius: 12px;
+  border-radius: 2px;
   overflow: hidden;
   transition: transform .3s ease;
 }
 .box img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
 }
 .box:hover {
@@ -113,11 +115,11 @@ header ul li a.active {
 /* Coming Soon section fix */
 .coming-container{
     display: grid;
-    gap: 1rem;
-    max-width: 70%;
+    gap: 3rem;
+    max-width: 65%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .coming-container .box img:hover{
     transform: translateY(-5px) scale(1.03);
@@ -171,14 +173,14 @@ header ul li a.active {
 }
 
 /* Responsive */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   header ul {
     display: none;
     flex-direction: column;
     background: #111;
     position: absolute;
-    top: 60px; right: 0;
-    width: 150px;
+    top: 70px; right: 0;
+    width: 200px;
     padding: 15px;
   }
   header ul.show {
@@ -190,9 +192,34 @@ header ul li a.active {
   .home-text h1 {
     font-size: 1.5rem;
   }
-  .home img {
-    width: 500px;
-    height: 80%;
-    object-fit: cover;
-  }  
+}
+
+/* BoxContainer Layout */
+.boxcontainer {
+  max-width: 986px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Responsive */
+@media (max-width: 1024px){
+  .home img{
+    grid-template-columns: 1fr;
+    padding: .85rem;
+  }
+  .homeview__poster{
+    aspect-ratio: 16/9;
+  }
+}  
+
+
+@media (max-width: 520px){
+  .homeview{ border-radius:1rem; }
+  .homeview__play{ width:48px; height:48px; font-size:1.25rem; }
 }
